@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hello Topbar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="HelloWorldText">Hello World!</string>
+    <string name="DummyButton">Dummy Button Text</string>
+    <string name="NewHelloWorldText">Hello New World!</string>
+
+</resources>
