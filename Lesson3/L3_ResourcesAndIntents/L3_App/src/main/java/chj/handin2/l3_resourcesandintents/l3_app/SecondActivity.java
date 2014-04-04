@@ -5,22 +5,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
-public class MainActivity extends Activity {
-
-    public final static String EXTRA_MESSAGE = "chj.handin2.13_resourcesandintents.13_app.Message";
+public class SecondActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
 
-        //Initiate new activity
-        Intent secondActivityIntent = new Intent(this, SecondActivity.class);
+        Intent invokedIntent = getIntent();
+        String ReceivedMessage = invokedIntent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-        secondActivityIntent.putExtra(EXTRA_MESSAGE, "Extra message ");
-        startActivity(secondActivityIntent);
+        TextView outputTextView = R.id.
     }
 
 
@@ -28,7 +26,7 @@ public class MainActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.second, menu);
         return true;
     }
 
