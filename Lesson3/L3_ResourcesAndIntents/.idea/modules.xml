@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/L3_App/L3_App.iml" filepath="$PROJECT_DIR$/L3_App/L3_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L3_ResourcesAndIntents.iml" filepath="$PROJECT_DIR$/L3_ResourcesAndIntents.iml" />
+    </modules>
+  </component>
+</project>
+
