@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 
@@ -18,7 +19,8 @@ public class SecondActivity extends Activity {
         Intent invokedIntent = getIntent();
         String ReceivedMessage = invokedIntent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-        TextView outputTextView = R.id.
+        TextView outputTextView = (TextView)findViewById(R.id.Output_TextView);
+        outputTextView.setText(ReceivedMessage);
     }
 
 
@@ -40,6 +42,11 @@ public class SecondActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClickButtonCloseActivity(View view)
+    {
+        this.finish();
     }
 
 }
