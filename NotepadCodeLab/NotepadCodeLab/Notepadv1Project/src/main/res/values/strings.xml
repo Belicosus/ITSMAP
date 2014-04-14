@@ -3,4 +3,5 @@
     <string name="app_name">Notepad v1</string>
     <string name="no_notes">No Notes Yet</string>
     <string name="action_settings">Menu title</string>
+    <string name="menu_insert">Add Item</string>
 </resources>
